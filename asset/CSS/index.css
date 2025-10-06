@@ -1,0 +1,15 @@
+h1{
+    font-size: 72px;
+    color: rgb(71, 71, 138);
+    text-decoration: solid;
+    text-transform: capitalize;
+}
+
+#titre2{
+    color: rgb(107, 35, 35);
+}
+
+.titre3{
+    color: rgb(28, 100, 28);
+    font-family: fantasy;
+}

@@ -1,0 +1,136 @@
+@media only screen and (max-width: 600px) {
+    .xp{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/*-------------- RESET ---------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------- HEADER -------------------*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    min-height: 100px;
+    /*background-image: url(../image/img_header.jpg);
+    background-repeat: no-repeat;
+    background-position: right 10% bottom 80%;
+    background-size: cover;*/
+    background: conic-gradient(at 20% 30%, green 25%, yellow 28%, orange 35%, rgb(204, 111, 165) 50%);
+
+}
+.navbar{
+    width:100%;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;    
+}
+
+nav li a{
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+/*.myname{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bolder;
+}*/
+
+.title{
+    text-align: center;
+    margin-top: 20%;
+}
+
+.main_title{
+    color: white;
+    font-size: 3.25rem;
+}
+
+.sub_title{
+    color: white;
+    font-size: 2.25rem;
+}
+
+
+#diplomes{
+    display: flex;
+    flex-direction: column;
+}
+
+#experience{
+    width: 100%;
+    height: 40vh;
+}
+
+.xp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.annee p{
+    font-size: 22px;
+}
+
+.emploi h6{
+    font-size: 22px;
+}
+
+.emploi p{
+    font-size: 18px;
+}
+
+/*-------------- FORMULAIRE -------------------*/
+#contact{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 20px;;
+    height: 30vh;
+    margin-bottom: 20px;;
+
+
+    background-color: aqua;
+
+}
+
+#contact h2{
+    font-size: 32px;
+
+    text-align: center;
+
+}
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:end;
+    column-gap: 10px;
+}
+
+.formulaire nom{
+    font-size: 48px;
+
+    align-self: end;
+    justify-self: center;
+}
