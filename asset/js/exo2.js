@@ -1,5 +1,5 @@
 let notes = [];
-let noteSur100Saisie = prompt("Quel est ta note sur 100 ?");
+let noteSur100Saisie = prompt("Quel est ta note sur 100 ? Fais Annuler lorsqu'il n'y a plus de notes à saisir.");
 let noteSur100 = parseInt(noteSur100Saisie);
 while (noteSur100Saisie != null) {
     if(noteSur100 >= 0 && noteSur100 <= 100) {
