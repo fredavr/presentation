@@ -1,15 +1,99 @@
-h1{
-    font-size: 72px;
-    color: rgb(71, 71, 138);
-    text-decoration: solid;
-    text-transform: capitalize;
+:root {
+  --colorGreenDark: #0c7915;
+  --colorGreenBright:#8fd14c;
+  --colorGreenLight: #cfff9f;
+  --colorYellowDark: #b69b04;
+  --colorYellowBright:#ffd700;
+  --colorYellowLight: #f5e487;
+  --colorOrangeDark: #8d5c01;
+  --colorOrangeBright: #ffa500;
+  --colorOrangeLight: #ffdd9d;
+  --colorPurpleDark: #8b028b;
+  --colorPurpleBright: #c22fc2;
+  --colorPurpleLight: #dd8fdd;
+  --colorGrayDark: #505050;
+  --colorGrayBright: #808080;
+  --colorGrayLight: #e7e7e7;
+}
+/*-------------- RESET ---------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
-#titre2{
-    color: rgb(107, 35, 35);
+body{
+    width: 100%;
+    height: 100%;
+
+    /*background: repeating-conic-gradient(at 8px 8px, var(--colorGreenDark) 28%, var(--colorYellowBright) 33%, var(--colorOrangeBright) 38%, var(--colorPurpleDark) 55%);*/
+    background: repeating-conic-gradient(at 0px 0px, var(--colorGreenDark) 25%, var(--colorYellowBright) 34%, var(--colorOrangeBright) 36%, var(--colorPurpleDark) 55%);
+
 }
 
-.titre3{
-    color: rgb(28, 100, 28);
-    font-family: fantasy;
+header{
+    width: 100%;
+    height: 32vh;
+    min-height: 180px;
+    text-align: center;
+}
+
+.title{
+    color: var(--colorGrayLight);
+    text-align: center;
+    padding: 2rem;
+}
+
+.main_title{
+    font-size: 3.25rem;
+}
+
+.sub_title{
+    font-size: 2.25rem;
+}
+
+#exos{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--colorGrayLight);
+    text-align: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 4rem;
+}
+
+
+.btns{
+	display:flex;
+    flex-direction: row;
+	align-items:center;
+	justify-content:center;
+}
+
+.btns button{
+    border: var(--colorOrangeBright) solid var(--colorPurpleBright);
+	color:var(--colorGrayLight);
+	background-color: var(--colorGrayDark);
+	
+	text-decoration:none;
+	cursor:pointer;
+	border-radius: 4px;
+	padding:5px;
+	margin:4px;
+	min-width:80px;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 3vh;
+    align-items: center;
+    color:var(--colorGrayLight);
+    
+    font-size: 0.9rem;
+    padding-right: 10px;
+
 }
