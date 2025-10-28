@@ -1,5 +1,5 @@
 function test() {
-    let lePrompt = prompt("La factorielle de quel combre souhaitez-vous calculer ?");
+    let lePrompt = prompt("La factorielle de quel nombre souhaitez-vous calculer ?");
     let leNombre = parseInt(lePrompt);
     let laFactorielle = leNombre;
     console.log("Factorielle de " + leNombre);
