@@ -95,7 +95,7 @@ let bonnesNotes = notes.filtre(function(note){
     return note >= 10;
 });
 console.log(bonnesNotes);
-*/
+
 
 let age_visiteur = parseInt(prompt("Quel est l'âge du visiteur ?"));
 console.log(age_visiteur);
@@ -110,6 +110,21 @@ if (age_visiteur > 12) {
         console.log("C'est gratuit !");
     }
  }
+*/
 
+const tousLesLi = document.querySelectorAll('nav ul li')
 
+console.log(tousLesLi);
+tousLesLi.forEach(item => {
+    console.log(item);
+})
+
+const monTitre = document.querySelector('h1');
+monTitre.textContent = "Salut Lulu";
+//monTitre.innerHTML = "<strong> Salut hihi </strong>";
+monTitre.style.color = "purple";
+monTitre.style.backgroundColor = "yellow";
+monTitre.classList.add('titi');
+monTitre.classList.remove('titi');
+monTitre.classList.toggle('titi');
 

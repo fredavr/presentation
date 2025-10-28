@@ -25,3 +25,9 @@ function test() {
     }
 }
 
+/* réponse : 
+let sum = notes.reduce((accumulator, currentvalue) => {
+    return accumulator + currentvalue;
+},0)
+let average = (sum / notes.length) / 5;
+*/
