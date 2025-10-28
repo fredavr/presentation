@@ -15,26 +15,6 @@ function test() {
 
 }
 
-/*    if (isNaN(leNombre)) {
-        alert("Le nombre saisi ne permet pas ce test !");
-    }
-    else {
-        while (leNombrePair < leNombre) {
-            console.log(leNombrePair);
-            // On ajoute +2 à chaque fois pour rester dans les nombres pairs
-            blabla += leNombrePair + " ";
-            leNombrePair += 2;
-        }
-        if (blabla == "") {
-            alert(`Il n'y a pas de nombres pairs compris entre 1 et ${leNombre}`);
-        } 
-        else{
-            alert(`Tous les nombres pairs compris entre 1 et ${leNombre} sont : \n\n ${blabla}`);
-        }
-    };
-}
-*/
-
 function remplisTousLesNombresPremiers(jusquaCeNombre,tabARemplir) {
     /* On remplit les premiers manuellement*/
     if (2 < jusquaCeNombre) {tabARemplir.push(2)};
@@ -86,43 +66,5 @@ function estUnNombrePremier(nombreAVerif) {
     }
     console.log(`oui ${nombreAVerif} est Un Nombre Entier.`);
     return true;
-    }
-    
-
-
-
-
-
-
-/*
-
-
-    fonction est_premier(n est un entier) : booléen
-     
-      i est un entier
-     
-      si n <= 1 alors
-        retourner faux
-      sinon si 2 <= n et n <= 3 alors
-        retourner vrai
-      sinon si n est_disible_par 2 alors
-        retourner faux
-      sinon
-        // rechercher des diviseurs
-        pour i de 3 à sqrt(n)+1 par pas de 2 faire
-          si n est_divisible_par i alors
-            retourne faux
-          fin si
-        fin pour
-      fin si
-     
-      // aucun diviseur trouvé, le nombre est premier
-      retourner vrai
-     
-    fin fonction 
-     
-
-
-*/   
-
-
+}
+  
