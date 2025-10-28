@@ -1,8 +1,8 @@
 function test() {
     let lePrompt = prompt("Quel nombre à tester  ?");
     let leNombre = parseInt(lePrompt);
-    let lePlusGrandDiviseur = 0;
-    console.log("recherche du plus grand diviseur de : " +leNombre);
+    let lePlusPetitDiviseur = 0;
+    console.log("recherche du plus petit diviseur de : " +leNombre);
     if (lePrompt == null) {return;}
 
     if (isNaN(leNombre)) {
@@ -15,7 +15,7 @@ function test() {
         return;
     }
     if (leNombre == 1) {
-        alert("Le plus grand diviseur de 1 est : 1");
+        alert("Le plus petit diviseur de 1 est : 1");
         return;
     }
 
@@ -25,16 +25,15 @@ function test() {
         console.log("vla le i " + i);
         if (leNombre % i == 0) {
             console.log("ça se divise par : " + i);
-            lePlusGrandDiviseur = leNombre / i;
-            console.log("avant break")
+            lePlusPetitDiviseur = i;
             break;
         }
     }
-    if (lePlusGrandDiviseur == 0) {
-        alert(`${leNombre} est un nombre premier, donc son plus grand diviseur est lui-même : ${leNombre}`)
+    if (lePlusPetitDiviseur == 0) {
+        alert(`${leNombre} est un nombre premier, donc son plus petit diviseur est : 1`)
     }
     else
     {
-        alert(`Le plus grand diviseur de ${leNombre} est ${lePlusGrandDiviseur}`)
+        alert(`Le plus petit diviseur de ${leNombre}, autre que 1, est ${lePlusPetitDiviseur}`)
     }
 }
