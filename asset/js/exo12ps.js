@@ -33,11 +33,6 @@ function test() {
         return;
     }
 
-    if (leNombre == 10) {
-        alert("Le PGCD de 10 et de 10 est : 10");
-        return;
-    }
-
     // Si lePlusGrand se divise par lePlusPetit, ça sera lePlus¨Petit le PGCD
     if (lePlusGrand % lePlusPetit == 0) {
         alert(`Le PGCD de ${lePlusGrand} et ${lePlusPetit} est : ${lePlusPetit}`);
