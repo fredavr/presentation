@@ -41,17 +41,19 @@ function test() {
     }
 
     // on cherche le plus grand diviseur du plus petit nombre
-    let racine = Math.trunc(Math.sqrt(lePlusPetit)) + 1;
-    for (let i = 2; i < racine; i++) {
-        lePlusGrandDiviseur = 0;
+    let midle = Math.trunc(lePlusPetit / 2) + 1;
+    for (let i = midle; i > 1; i--) {
         console.log("vla le i " + i);
         if (lePlusPetit % i == 0) {
             console.log("ça se divise par : " + i);
-            lePlusGrandDiviseur = lePlusPetit / i;
+            lePlusGrandDiviseur = i;
             // ce diviseur divise aussi lePlusGrand, ce sera le PGCD
             if (lePlusGrand % lePlusGrandDiviseur == 0) {
+                console.log("Voila trouvé : " + lePlusGrandDiviseur);
                 break;
             }
+            else
+            {lePlusGrandDiviseur = 0;}
         }
     }
     if (lePlusGrandDiviseur == 0) {

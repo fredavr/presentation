@@ -20,12 +20,14 @@ function test() {
     }
 
     // on cherche son divieur s'il existe jusqu'a ce que l'on sache que c'est un nombre premier
-    let racine = Math.trunc(Math.sqrt(leNombre)) + 1;
-    for (let i = 2; i < racine; i++) {
+    // il sera forcément inférieur ou égal à la moitié
+    let midle = Math.trunc(leNombre / 2) + 1;
+    for (let i = 2; i <= midle; i++) {
         console.log("vla le i " + i);
         if (leNombre % i == 0) {
             console.log("ça se divise par : " + i);
             lePlusPetitDiviseur = i;
+            console.log("avant break")
             break;
         }
     }

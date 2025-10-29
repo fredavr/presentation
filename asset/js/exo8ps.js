@@ -19,13 +19,13 @@ function test() {
         return;
     }
 
-    // on cherche son divieur s'il existe jusqu'a ce que l'on sache que c'est un nombre premier
-    let racine = Math.trunc(Math.sqrt(leNombre)) + 1;
-    for (let i = 2; i < racine; i++) {
+    // on cherche son plus grand diviseur s'il existe 
+    let midle = Math.trunc(leNombre / 2) + 1;
+    for (let i = midle; i > 1; i--) {
         console.log("vla le i " + i);
         if (leNombre % i == 0) {
             console.log("ça se divise par : " + i);
-            lePlusGrandDiviseur = leNombre / i;
+            lePlusGrandDiviseur = i;
             console.log("avant break")
             break;
         }
